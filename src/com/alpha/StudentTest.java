@@ -51,12 +51,23 @@ public class StudentTest {
 
                 case 3:
                 {
+                	 System.out.print("Enter ID to update: ");
+                     int uid = sc.nextInt();
+                     System.out.print("Enter New Name: ");
+                     String uname = sc.next();
+                     System.out.print("Enter New Age: ");
+                     int uage = sc.nextInt();
+                     si.updateStudent(new Student(uid, uname, uage));
+
                 	
                 }
                     break;
 
                 case 4:
                 {
+                	  System.out.print("Enter ID to remove: ");
+                      si.removeStudent(sc.nextInt());
+
                    
                 }
                     break;
